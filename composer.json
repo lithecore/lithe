@@ -1,0 +1,24 @@
+{
+    "name": "lithecore/lithe",
+    "description": "Lithe is a flexible and efficient PHP framework for creating robust web applications that adapt to developers' needs.",
+    "type": "library",
+    "require": {
+        "php": "^8.2",
+        "lithecore/framework": "^1.0"
+    },
+    "scripts": {
+        "post-root-package-install": [
+            "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
+        ],
+        "post-create-project-cmd": [
+            
+        ]
+    },
+    "extra": {
+        "lithe": {
+            "dont-discover": []
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
